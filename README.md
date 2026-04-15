@@ -1,9 +1,12 @@
 # css-minecraft-skin-viewer
 
-[![npm version](https://img.shields.io/npm/v/css-minecraft-skin-viewer?style=flat-square)](https://www.npmjs.com/package/css-minecraft-skin-viewer)
-[![npm downloads](https://img.shields.io/npm/dm/css-minecraft-skin-viewer?style=flat-square)](https://www.npmjs.com/package/css-minecraft-skin-viewer)
-[![license](https://img.shields.io/npm/l/css-minecraft-skin-viewer?style=flat-square)](./LICENSE)
-[![GitHub](https://img.shields.io/badge/github-css--minecraft--skin--viewer-181717?style=flat-square&logo=github)](https://github.com/TheNolle/css-minecraft-skin-viewer)
+[![npm version](https://img.shields.io/npm/v/css-minecraft-skin-viewer?color=blue&label=npm)](https://www.npmjs.com/package/css-minecraft-skin-viewer)
+[![npm downloads](https://img.shields.io/npm/dm/css-minecraft-skin-viewer?color=green&label=downloads)](https://www.npmjs.com/package/css-minecraft-skin-viewer)
+[![License](https://img.shields.io/npm/l/css-minecraft-skin-viewer?color=orange)](LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/thenolle/css-minecraft-skin-viewer?color=red)](https://github.com/thenolle/css-minecraft-skin-viewer/issues)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/thenolle/css-minecraft-skin-viewer/ci.yml?branch=master&label=last%20build&style=flat-square)](https://github.com/thenolle/css-minecraft-skin-viewer/actions)
+[![GitHub stars](https://img.shields.io/github/stars/thenolle/css-minecraft-skin-viewer?color=yellow)](https://github.com/thenolle/css-minecraft-skin-viewer/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/thenolle/css-minecraft-skin-viewer?color=blueviolet)](https://github.com/thenolle/css-minecraft-skin-viewer/network/members)
 
 A pure CSS 3D Minecraft skin viewer for React. Supports poses, animations, effects, outline, skull, cape, and face views. SSR-compatible. Zero runtime dependencies.
 
