@@ -2,8 +2,16 @@
   "name": "css-minecraft-skin-viewer",
   "version": "0.0.1",
   "description": "A pure CSS 3D Minecraft skin viewer for React. Supports poses, animations, effects, outline, skull, cape, face views. SSR-compatible. Zero runtime dependencies.",
-  "author": "Nolly",
   "license": "MIT",
+  "author": "Nolly",
+  "homepage": "https://github.com/thenolle/css-minecraft-skin-viewer#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheNolle/css-minecraft-skin-viewer"
+  },
+  "bugs": {
+    "url": "https://github.com/thenolle/css-minecraft-skin-viewer/issues"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -13,6 +21,11 @@
     "./style.css": "./dist/index.css"
   },
   "sideEffects": false,
+  "packageManager": "pnpm@9.12.2",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9.10.0"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -35,5 +48,26 @@
     "react-dom": "^18.0.0",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/thenolle"
+    },
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/nollycafe"
+    },
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/_nolly"
+    },
+    {
+      "type": "paypal",
+      "url": "https://paypal.me/nollyscafe"
+    }
+  ]
 }
