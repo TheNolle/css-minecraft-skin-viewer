@@ -1,0 +1,43 @@
+name: Release
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 20
+          registry-url: "https://registry.npmjs.org/"
+          package-manager-cache: false
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run build
+
+      - name: Upgrade npm
+        run: npm install -g npm@latest
+
+      - name: Conditional Publish
+        run: |
+          PACKAGE_NAME=$(node -p "require('./package.json').name")
+          LOCAL_VERSION=$(node -p "require('./package.json').version")
+          REMOTE_VERSION=$(npm view $PACKAGE_NAME version 2>/dev/null || echo "0.0.0")
+          if [ "$LOCAL_VERSION" != "$REMOTE_VERSION" ]; then
+            npm install -g npm@latest
+            echo "🚀 New version $LOCAL_VERSION detected (Remote: $REMOTE_VERSION)"
+            pnpm publish --access public --no-git-checks
+          else
+            echo "✅ Version $LOCAL_VERSION matches registry. Skipping publish."
+          fi

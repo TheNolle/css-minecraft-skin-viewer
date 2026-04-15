@@ -1,0 +1,17 @@
+# Source
+src/
+
+# Config files
+tsup.config.ts
+tsconfig.json
+pnpm-workspace.yaml
+.npmrc
+.gitignore
+
+# Dev artifacts
+*.tgz
+*.log
+
+# Misc
+.github/
+.vscode/
