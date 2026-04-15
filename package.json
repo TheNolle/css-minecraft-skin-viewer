@@ -1,6 +1,6 @@
 {
   "name": "css-minecraft-skin-viewer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A pure CSS 3D Minecraft skin viewer for React. Supports poses, animations, effects, outline, skull, cape, face views. SSR-compatible. Zero runtime dependencies.",
   "license": "MIT",
   "author": "Nolly",
